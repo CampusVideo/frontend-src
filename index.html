@@ -1,0 +1,725 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>频道列表</title>
+    <script src="skel.min.js"></script>
+    <script>
+      skel.init();
+    </script>
+  </head>
+
+  <style>
+    body{
+      font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      background-repeat: repeat-x;
+      background-image: -webkit-linear-gradient(45deg, #ADCAC8, #082274);
+      background-image: -moz-linear-gradient(45deg, #ADCAC8, #082274);
+      background-image: linear-gradient(45deg, #ADCAC8, #082274);
+      background-attachment: fixed;
+    }
+    .container{
+      margin-top:100px;
+    }
+    .well {
+      min-height: 20px;
+      padding: 19px;
+      padding-bottom:40px;
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border: 1px solid #e3e3e3;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+      -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    }
+    a{
+      text-decoration:none;
+      color:blue;
+    }
+  </style>
+
+  <body>
+    <div class="container well">
+
+      <div class="row">
+        <div class="8u -2u">
+          <h1 style="text-align:center">
+            IPTV 频道列表
+          </h1>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-1综合高清</p>
+          <a class="icon1" href="/player.html?channel=cctv1hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv1hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-2财经高清</p>
+          <a class="icon1" href="/player.html?channel=cctv2hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv2hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-3综艺高清</p>
+          <a class="icon1" href="/player.html?channel=cctv3hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv3hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-4中文国际高清</p>
+          <a class="icon1" href="/player.html?channel=cctv4hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv4hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-5体育高清</p>
+          <a class="icon1" href="/player.html?channel=cctv5hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv5hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-5+体育赛事高清</p>
+          <a class="icon1" href="/player.html?channel=cctv5phd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv5phd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-6电影高清</p>
+          <a class="icon1" href="/player.html?channel=cctv6hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv6hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-7国防军事高清</p>
+          <a class="icon1" href="/player.html?channel=cctv7hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv4hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-8电视剧高清</p>
+          <a class="icon1" href="/player.html?channel=cctv8hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv8hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-9纪录高清</p>
+          <a class="icon1" href="/player.html?channel=cctv9hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv9hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-10科教高清</p>
+          <a class="icon1" href="/player.html?channel=cctv10hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv10hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-12社会与法高清</p>
+          <a class="icon1" href="/player.html?channel=cctv12hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv12hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-14少儿高清</p>
+          <a class="icon1" href="/player.html?channel=cctv14hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv14hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-17农业农村高清</p>
+          <a class="icon1" href="/player.html?channel=cctv17hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv17hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CGTN高清</p>
+          <a class="icon1" href="/player.html?channel=cgtnhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cgtnhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CHC高清电影</p>
+          <a class="icon1" href="/player.html?channel=chchd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/chchd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>北京卫视高清</p>
+          <a class="icon1" href="/player.html?channel=btv1hd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv1hd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京文艺高清</p>
+          <a class="icon1" href="/player.html?channel=btv2hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv2hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京影视高清</p>
+          <a class="icon1" href="/player.html?channel=btv4hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv4hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京新闻高清</p>
+          <a class="icon1" href="/player.html?channel=btv9hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv9hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>北京冬奥纪实高清</p>
+          <a class="icon1" href="/player.html?channel=btv11hd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv11hd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>湖南卫视高清</p>
+          <a class="icon1" href="/player.html?channel=hunanhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hunanhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>浙江卫视高清</p>
+          <a class="icon1" href="/player.html?channel=zjhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/zjhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>江苏卫视高清</p>
+          <a class="icon1" href="/player.html?channel=jshd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/jshd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>东方卫视高清</p>
+          <a class="icon1" href="/player.html?channel=dfhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/dfhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>安徽卫视高清</p>
+          <a class="icon1" href="/player.html?channel=ahhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/ahhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>黑龙江卫视高清</p>
+          <a class="icon1" href="/player.html?channel=hljhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hljhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>辽宁卫视高清</p>
+          <a class="icon1" href="/player.html?channel=lnhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/lnhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>深圳卫视高清</p>
+          <a class="icon1" href="/player.html?channel=szhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/szhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>广东卫视高清</p>
+          <a class="icon1" href="/player.html?channel=gdhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gdhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>天津卫视高清</p>
+          <a class="icon1" href="/player.html?channel=tjhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/tjhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>湖北卫视高清</p>
+          <a class="icon1" href="/player.html?channel=hbhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hbhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>山东卫视高清</p>
+          <a class="icon1" href="/player.html?channel=sdhd" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sdhd/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>重庆卫视高清</p>
+          <a class="icon1" href="/player.html?channel=cqhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cqhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>上海纪实高清</p>
+          <a class="icon1" href="/player.html?channel=docuchina" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/docuchina/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>四川卫视高清</p>
+          <a class="icon1" href="/player.html?channel=schd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/schd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>金鹰纪实高清</p>
+          <a class="icon1" href="/player.html?channel=gedocu" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gedocu/index.m3u8" target="_blank">移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>福建东南卫视高清</p>
+          <a class="icon1" href="/player.html?channel=dnhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/dnhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>河北卫视高清</p>
+          <a class="icon1" href="/player.html?channel=hebhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hebhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>江西卫视高清</p>
+          <a class="icon1" href="/player.html?channel=jxhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/jxhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>全纪实高清</p>
+          <a class="icon1" href="/player.html?channel=documentaryhd" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/documentaryhd/index.m3u8" target="_blank">移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-1综合</p>
+          <a class="icon1" href="/player.html?channel=cctv1" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv1/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-2财经</p>
+          <a class="icon1" href="/player.html?channel=cctv2" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv2/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-3综艺</p>
+          <a class="icon1" href="/player.html?channel=cctv3" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv3/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-4中文国际</p>
+          <a class="icon1" href="/player.html?channel=cctv4" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv4/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-5体育</p>
+          <a class="icon1" href="/player.html?channel=cctv5" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv5/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-6电影</p>
+          <a class="icon1" href="/player.html?channel=cctv6" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv6/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-7国防军事</p>
+          <a class="icon1" href="/player.html?channel=cctv7" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv7/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-8电视剧</p>
+          <a class="icon1" href="/player.html?channel=cctv8" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv8/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-9纪录</p>
+          <a class="icon1" href="/player.html?channel=cctv9" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv9/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-10科教</p>
+          <a class="icon1" href="/player.html?channel=cctv10" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv10/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-11戏曲</p>
+          <a class="icon1" href="/player.html?channel=cctv11" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv11/index.m3u8" target="_blank" >移动端</a>
+        </div>
+          <div class="2u">
+          <p>CCTV-12社会与法</p>
+          <a class="icon1" href="/player.html?channel=cctv12" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv12/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-13新闻</p>
+          <a class="icon1" href="/player.html?channel=cctv13" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv13/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-14少儿</p>
+          <a class="icon1" href="/player.html?channel=cctv14" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv14/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-15音乐</p>
+          <a class="icon1" href="/player.html?channel=cctv15" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv15/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-17军事农业</p>
+          <a class="icon1" href="/player.html?channel=cctv17" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv17/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CGTN</p>
+          <a class="icon1" href="/player.html?channel=cctv16" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cctv16/index.m3u8" target="_blank" >移动端</a>
+          </div>
+        </div>
+        <div class="2u">
+          <p>CCTV-第一剧场</p>
+          <a class="icon1" href="/player.html?channel=dyjctv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/dyjctv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-世界地理</p>
+          <a class="icon1" href="/player.html?channel=sjdltv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sjdltv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-风云剧场</p>
+          <a class="icon1" href="/player.html?channel=fyjctv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/fyjctv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CCTV-风云音乐</p>
+          <a class="icon1" href="/player.html?channel=fyyytv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/fyyytv/index.m3u8" target="_blank" >移动端</a>
+          </div>
+        </div>
+        <div class="2u">
+          <p>CCTV-风云足球</p>
+          <a class="icon1" href="/player.html?channel=fyzqtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/fyzqtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-兵器科技</p>
+          <a class="icon1" href="/player.html?channel=gfjstv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gfjstv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>CCTV-怀旧剧场</p>
+          <a class="icon1" href="/player.html?channel=hjjctv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hjjctv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>北京卫视</p>
+          <a class="icon1" href="/player.html?channel=btv1" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv1/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京文艺</p>
+          <a class="icon1" href="/player.html?channel=btv2" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv2/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京科教</p>
+          <a class="icon1" href="/player.html?channel=btv3" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv3/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京影视</p>
+          <a class="icon1" href="/player.html?channel=btv4" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv4/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>北京财经</p>
+          <a class="icon1" href="/player.html?channel=btv5" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv5/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京生活</p>
+          <a class="icon1" href="/player.html?channel=btv7" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv7/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京青年</p>
+          <a class="icon1" href="/player.html?channel=btv8" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv8/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京新闻</p>
+          <a class="icon1" href="/player.html?channel=btv9" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv9/index.m3u8" target="_blank">移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>北京Kaku少儿</p>
+          <a class="icon1" href="/player.html?channel=btv10" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv10/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>北京冬奥纪实</p>
+          <a class="icon1" href="/player.html?channel=btv11" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/btv11/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>深圳卫视</p>
+          <a class="icon1" href="/player.html?channel=sztv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sztv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>安徽卫视</p>
+          <a class="icon1" href="/player.html?channel=ahtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/ahtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>河南卫视</p>
+          <a class="icon1" href="/player.html?channel=hntv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hntv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>陕西卫视</p>
+          <a class="icon1" href="/player.html?channel=sxtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sxtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>吉林卫视</p>
+          <a class="icon1" href="/player.html?channel=jltv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/jltv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>广东卫视</p>
+          <a class="icon1" href="/player.html?channel=gdtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gdtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>山东卫视</p>
+          <a class="icon1" href="/player.html?channel=sdtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sdtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>湖北卫视</p>
+          <a class="icon1" href="/player.html?channel=hbtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hbtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>广西卫视</p>
+          <a class="icon1" href="/player.html?channel=gxtv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gxtv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>河北卫视</p>
+          <a class="icon1" href="/player.html?channel=hebtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hebtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>西藏卫视</p>
+          <a class="icon1" href="/player.html?channel=xztv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/xztv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>内蒙古卫视</p>
+          <a class="icon1" href="/player.html?channel=nmtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/nmtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>青海卫视</p>
+          <a class="icon1" href="/player.html?channel=qhtv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/qhtv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>四川卫视</p>
+          <a class="icon1" href="/player.html?channel=sctv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sctv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>江苏卫视</p>
+          <a class="icon1" href="/player.html?channel=jstv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/jstv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>天津卫视</p>
+          <a class="icon1" href="/player.html?channel=tjtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/tjtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>山西卫视</p>
+          <a class="icon1" href="/player.html?channel=sxrtv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/sxrtv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>辽宁卫视</p>
+          <a class="icon1" href="/player.html?channel=lntv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/lntv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>厦门卫视</p>
+          <a class="icon1" href="/player.html?channel=xmtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/xmtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>新疆卫视</p>
+          <a class="icon1" href="/player.html?channel=xjtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/xjtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>东方卫视</p>
+          <a class="icon1" href="/player.html?channel=dftv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/dftv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>黑龙江卫视</p>
+          <a class="icon1" href="/player.html?channel=hljtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hljtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>湖南卫视</p>
+          <a class="icon1" href="/player.html?channel=hunantv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/hunantv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>云南卫视</p>
+          <a class="icon1" href="/player.html?channel=yntv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/yntv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>江西卫视</p>
+          <a class="icon1" href="/player.html?channel=jxtv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/jxtv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>福建东南卫视</p>
+          <a class="icon1" href="/player.html?channel=dntv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/dntv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>浙江卫视</p>
+          <a class="icon1" href="/player.html?channel=zjtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/zjtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>贵州卫视</p>
+          <a class="icon1" href="/player.html?channel=gztv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gztv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>宁夏卫视</p>
+          <a class="icon1" href="/player.html?channel=nxtv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/nxtv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>甘肃卫视</p>
+          <a class="icon1" href="/player.html?channel=gstv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/gstv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>重庆卫视</p>
+          <a class="icon1" href="/player.html?channel=cqtv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cqtv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>兵团卫视</p>
+          <a class="icon1" href="/player.html?channel=bttv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/bttv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+      
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>旅游卫视</p>
+          <a class="icon1" href="/player.html?channel=lytv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/lytv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>中国教育-1</p>
+          <a class="icon1" href="/player.html?channel=cetv1" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cetv1/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>中国教育-3</p>
+          <a class="icon1" href="/player.html?channel=cetv3" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cetv3/index.m3u8" target="_blank" >移动端</a>
+        </div>
+        <div class="2u">
+          <p>中国教育-4</p>
+          <a class="icon1" href="/player.html?channel=cetv4" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/cetv4/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <div class="2u -2u">
+          <p>CHC动作电影</p>
+          <a class="icon1" href="/player.html?channel=chcatv" target="_blank">PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/chcatv/index.m3u8" target="_blank">移动端</a>
+        </div>
+        <div class="2u">
+          <p>CHC家庭影院</p>
+          <a class="icon1" href="/player.html?channel=chctv" target="_blank" >PC端</a>&nbsp;
+          <a class="icon1" href="/hhls/chctv/index.m3u8" target="_blank" >移动端</a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:50px">
+        <p class="8u -2u">
+        </p>
+        <p class="8u -2u">
+        </p>
+      </div>
+      
+    </div>
+
+  </body>
+</html>
